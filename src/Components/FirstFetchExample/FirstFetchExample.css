@@ -1,0 +1,57 @@
+.list_container {
+    max-width: 1024px;
+    height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+    gap: 16px;
+    list-style: none;
+}
+
+.card_repos {
+    width: 280px;
+    height: auto;
+    padding: 16px;
+    background: #333333;
+    border-radius: 8px;
+  }
+  
+  .card_title_repos {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aquamarine;
+  }
+  
+  .avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50em;
+    margin: auto;
+    border: 2px dotted aquamarine;
+  }
+
+  p {
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+  }
+
+  .button_repos {
+      background-color: aquamarine;
+      padding: 8px 16px;
+      border: 2px solid darkcyan;
+      border-radius: 25em;
+      float: right;
+      color: #333333;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  .button_repos:hover {
+    background-color: darkcyan;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
