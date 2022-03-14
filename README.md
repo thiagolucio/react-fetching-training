@@ -22,12 +22,6 @@ OR
   yarn install
 ```
 
-
-```bash
-  cd my-project
-```
-
-
 Running Server
 
 ```bash
