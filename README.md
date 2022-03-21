@@ -7,6 +7,7 @@ A training fetching techniques with ReactJS
 - ReactJS
 - Pure CSS
 - Axios
+- React Query
 
 
 

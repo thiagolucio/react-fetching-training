@@ -1,24 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import SecondFetchExampleAxios from './Components/SecondFetchExampleAxios/SecondFetchExampleAxios'
-import ThirdFetchHook from './Components/ThirdFetchHook/ThirdFetchHook'
-// import FirstFetchExample from './Components/FirstFetchExample/FirstFetchExample'
 
-function App() {
-  const [repositories, setRepositories] = useState([])
+import { Route, Routes } from "react-router-dom";
+import { Repo } from "./pages/Repo";
+import { Repos } from "./pages/Repos";
 
+export function App() {  
   return (
-    <>
-      <header className="top_bar">       
-        API Fetch Trainning
-      </header>
-      <div className="container">
-        {/* <FirstFetchExample/> 
-        <SecondFetchExampleAxios/> */}
-        <ThirdFetchHook/>
-      </div>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Repos />} />
+      <Route path="/repos/*" element={<Repo />} />
+    </Routes>
+  );
 }
 
-export default App
